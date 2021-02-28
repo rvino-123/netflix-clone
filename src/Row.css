@@ -1,0 +1,26 @@
+.row_posters {
+  display: flex;
+  /* This is how to create the horizontal scroll for the movies, to avoid scrolling whole page to see rest of films */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+/* HOW TO HIDE SCROLL BAR */
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  /* object-fit will come into play when set a max height */
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transfom 450ms; /* if ever changes size, add a little transition */
+  margin-right: 10px;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
