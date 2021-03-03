@@ -14,7 +14,6 @@ function Banner() {
           Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
-      console.log(request);
       return request;
     }
     fetchData();
